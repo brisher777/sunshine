@@ -1,0 +1,19 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="us.holypotatoes.sunshine.SettingsActivity$GeneralPreferenceFragment"
+        android:title="@string/pref_header_general" />
+
+    <header
+        android:fragment="us.holypotatoes.sunshine.SettingsActivity$UnitsPreferenceFragment"
+        android:title="@string/pref_units_label"/>
+
+    <header
+        android:fragment="us.holypotatoes.sunshine.SettingsActivity$DataSyncPreferenceFragment"
+        android:title="@string/pref_header_data_sync" />
+
+
+
+</preference-headers>

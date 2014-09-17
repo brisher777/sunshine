@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sunshine</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_map">Map Location</string>
+    <string name="action_share">Share</string>
+
+    <string name="url_scheme">http</string>
+    <string name="url_authority">api.openweathermap.org</string>
+    <string-array name="url_path">
+        <item>data</item>
+        <item>2.5</item>
+        <item>forecast</item>
+        <item>daily</item>
+    </string-array>
+    <string name="query_location">q</string>
+    <string name="query_mode">mode</string>
+    <string name="query_units">units</string>
+    <string name="query_count">cnt</string>
+    <string name="param_location">San Antonio, TX</string>
+    <string name="param_mode">json</string>
+    <string name="param_units">metric</string>
+    <string name="param_count">7</string>
+    <string-array name="url_queries">
+        <item>@string/query_location</item>
+        <item>@string/query_mode</item>
+        <item>@string/query_units</item>
+        <item>@string/query_count</item>
+    </string-array>
+    <string-array name="url_params">
+        <item name="city_and_state">@string/param_location</item>
+        <item name="mode">@string/param_mode</item>
+        <item name="units">@string/param_units</item>
+        <item name="count">@string/param_count</item>
+    </string-array>
+
+</resources>
