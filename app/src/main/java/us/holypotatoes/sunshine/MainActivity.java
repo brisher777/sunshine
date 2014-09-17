@@ -7,11 +7,14 @@ import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    private static final String LIFECYCLE_TAG = "LIFECYCLE EXAMPLE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,38 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new ForecastFragment())
                     .commit();
         }
+        Log.v(LIFECYCLE_TAG, "onCreate");
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.v(LIFECYCLE_TAG, "onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.v(LIFECYCLE_TAG, "onStop");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.v(LIFECYCLE_TAG, "onResume");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.v(LIFECYCLE_TAG, "onStart");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.v(LIFECYCLE_TAG, "onDestroy");
     }
 
     @Override
