@@ -1,4 +1,4 @@
-package us.holypotatoes.sunshine;
+package us.holypotatoes.sunshine.test;
 
 import android.test.suitebuilder.TestSuiteBuilder;
 

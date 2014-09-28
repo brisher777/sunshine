@@ -18,7 +18,7 @@
     </string-array>
     <string-array name="pref_units_values">
         <item>@string/pref_units_metric_value</item>
-        <item>@string/pref_units_imperial_value</item>
+        <item>@string/pref_units_imperial_value</item>A
     </string-array>
     <string name="pref_units_default" translatable="false">Metric</string>
     <string name="pref_units_imperial" translatable="false">Imperial</string>
